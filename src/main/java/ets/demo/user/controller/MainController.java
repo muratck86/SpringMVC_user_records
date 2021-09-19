@@ -89,7 +89,7 @@ public class MainController {
 		Integer id = Integer.parseInt(req.getParameter("id"));
 		userDAO.delete(id);
 
-		return new ModelAndView("redirect:/");
+		return new ModelAndView("redirect:/kullanici_listesi");
 
 	}
 

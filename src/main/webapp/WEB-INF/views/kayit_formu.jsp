@@ -16,17 +16,17 @@
 			<form:hidden path="id"/>
 				<tr>
 					<td>İsim:</td>
-					<td><form:input path="name" /></td>
+					<td colspan="3"><form:input path="name" /></td>
 				</tr>
 				<tr>
 					<td>Kan Grubu:</td>
 					<td><form:input path="bloodGroup" /></td>
 					<td>Cep Telefonu:</td>
-					<td><form:input path="telephone" /></td>
+					<td><form:input type="tel" path="telephone" pattern="05[0-9]{9}" placeholder="05323215566"/></td>
 				</tr>
 				<tr>
 					<td>Adres:</td>
-					<td><form:input path="address" /></td>
+					<td colspan="2"><form:textarea name="address" rows="5" cols="40" path="address" /></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center" ><input type="submit" value="Kaydet"/></td>

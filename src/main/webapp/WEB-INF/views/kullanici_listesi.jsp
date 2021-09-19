@@ -33,7 +33,8 @@
 					<td>${user.telephone}</td>
 					<td>${user.address}</td>
 					<td><a href="guncelle?id=${user.id}">Guncelle</a></td>
-					<td><a href="sil?id=${user.id}">Sil</a></td>
+					<td><a href="sil?id=${user.id}"
+						   onclick="if(!(confirm('Silmek istediğinizden emin misini?'))) return false">Sil</a></td>
 
 				</tr>
 			</c:forEach>
