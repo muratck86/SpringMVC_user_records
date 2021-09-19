@@ -17,8 +17,14 @@ import ets.demo.user.model.User;
 @Controller
 public class MainController {
 
-	@Autowired
+	//Remove annottation since wiring is configured in the xml file
+	//@Autowired
 	private UserDAO userDAO;
+
+	//Autowiring is configured in the xml file to be done by setter method
+	public void setUserDAO(UserDAO userDAO) {
+		this.userDAO = userDAO;
+	}
 
 	@RequestMapping(value = "/")
 	public ModelAndView anasayfa(ModelAndView model) {
