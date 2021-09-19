@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +16,7 @@ import ets.demo.user.model.User;
 @Controller
 public class MainController {
 
-	//Remove annottation since wiring is configured in the xml file
+	//Remove annotation since wiring is configured in the xml file
 	//@Autowired
 	private UserDAO userDAO;
 
