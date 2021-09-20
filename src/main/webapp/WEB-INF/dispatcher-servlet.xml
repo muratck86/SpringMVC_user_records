@@ -10,7 +10,8 @@
        https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <mvc:annotation-driven/>
-    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="31556926"/>
+    <mvc:resources mapping="/resourcesFolder/**" location="/resources/"/>
+
 
     <!-- bean definitions here id: not important, class full name of the class
         to inject -->

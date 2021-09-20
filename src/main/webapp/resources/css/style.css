@@ -1,4 +1,73 @@
-h1 {
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    background-color:aqua;
+    background-image: url("/UserManager/resourcesFolder/images/imgbin_pen-book-png.png");
+    font-size: 1.15rem;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2, h1 {
+    color: darkolivegreen;
+    padding: 20px;
+}
+
+.centered {
     align-self: center;
-    color: blue;
+    align-content: center;
+    text-align: center;
+}
+
+td:hover {
+    cursor: pointer;
+    }
+
+.bg-color {
+    background-color: burlywood;
+}
+
+.buton {
+    padding: 8px 27px;
+    font-size: 1.1em;
+}
+.buton:hover {
+    background-color: green;
+}
+footer {
+    font-size: 0.75em;
+    color: aliceblue;
+}
+
+.transp {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    border: solid black 1px;
+
+}
+
+
+@media (min-width: 576px) {
+    html {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.1rem;
+    }
 }
