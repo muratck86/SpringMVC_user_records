@@ -16,12 +16,13 @@
     <!-- bean definitions here id: not important, class full name of the class
         to inject -->
     <context:component-scan base-package="ets.demo.user"/>
+    <context:property-placeholder location="classpath:application.properties"/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/kayit_defteri?useUnicode=yes&amp;characterEncoding=UTF-8"/>
-        <property name="username" value="murat"/>
-        <property name="password" value="12345"/>
+        <property name="driverClassName" value="${database.driver"/>
+        <property name="url" value="${database.url}?useUnicode=yes&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="${database.user}"/>
+        <property name="password" value="${database.password}"/>
     </bean>
 
     <bean id="userDAO" class="ets.demo.user.dao.UserDAOImpl">
